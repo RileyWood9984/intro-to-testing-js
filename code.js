@@ -18,7 +18,7 @@ function sayHello(input) {
 }
 function isFive(input) {
     if (input===5||input==="5") {
-        return (input === 5)
+        return (input == 5)
     } else{
     return false
     }
