@@ -43,4 +43,7 @@ describe('isFive', function() {
     it('should be true if 5',function(){
         expect(typeof isFive(5)).toBe('boolean')
     });
+    it('should be true if it is a string 5, ie: "5"',function(){
+        expect(typeof isFive("5")).toBe('boolean')
+    });
 });
