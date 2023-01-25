@@ -17,5 +17,5 @@ function sayHello(input) {
     }
 }
 function isFive(x) {
-    return x==5
+    return x===5
 }
