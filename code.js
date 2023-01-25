@@ -10,7 +10,7 @@ function sayHello(input) {
     // } else {
     //     return "Hello, Jane!";
     // }
-    if (input === null || input === undefined) {
+    if (input === null || input === undefined|| isNaN(input)===false) {
         return "Hello, World!"
     } else {
         return "Hello, " + input + "!"
