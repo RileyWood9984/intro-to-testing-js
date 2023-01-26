@@ -38,17 +38,23 @@ describe('isFive', function() {
         expect(typeof isFive).toBe('function');
     });
     it('should be a boolean',function(){
-        expect(typeof isFive()).toBe('boolean')
+        expect(typeof isFive()).toBe('boolean');
     });
     it('should be true if 5',function(){
-        expect(typeof isFive(5)).toBe('boolean')
+        expect(typeof isFive(5)).toBe('boolean');
     });
     it('should be true if it is a string 5, ie: "5"',function(){
-        expect(typeof isFive("5")).toBe('boolean')
+        expect(typeof isFive("5")).toBe('boolean');
     });
 });
 describe( 'isVowel',function(){
     it ('should be a defined function',function(){
-        expect(typeof isVowel).toBe('function')
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return a boolean', function (){
+        expect(typeof isVowel('')).toBe('boolean');
+    });
+    it('should return true if "a"', function (){
+        expect(typeof isVowel('a')).toBe('boolean');
     });
 });
