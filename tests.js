@@ -41,10 +41,10 @@ describe('isFive', function() {
         expect(typeof isFive()).toBe('boolean');
     });
     it('should be true if 5',function(){
-        expect(typeof isFive(5)).toBe('boolean');
+        expect(isFive(5)).toBe(true);
     });
     it('should be true if it is a string 5, ie: "5"',function(){
-        expect(typeof isFive("5")).toBe('boolean');
+        expect(isFive("5")).toBe(true);
     });
 });
 describe( 'isVowel',function(){
@@ -55,9 +55,12 @@ describe( 'isVowel',function(){
         expect(typeof isVowel('')).toBe('boolean');
     });
     it('should return true if "a"', function (){
-        expect(typeof isVowel('a')).toBe('boolean');
+        expect(isVowel('a')).toBe(true);
     });
     it('should return true if "A"', function (){
-        expect(typeof isVowel('A')).toBe('boolean');
+        expect(isVowel('A')).toBe(true);
+    });
+    it('should return false if "y"', function (){
+        expect(isVowel('y')).toBe(false);
     });
 });

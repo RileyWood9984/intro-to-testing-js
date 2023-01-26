@@ -23,9 +23,11 @@ function isFive(input) {
     return false
     }
 }
-function isVowel(input){
-    let lowInput = input.toLowerCase()
-    if (isNaN(input)===true){
+function isVowel(inp){
+    console.log(inp.toLowerCase())
+    let input= inp.toLowerCase()
+
+    if (isNaN(input)===false){
         return false
     }else if(input==='a'||input==='e'||input==='i'||input==='o'||input==='u'){
         return true
