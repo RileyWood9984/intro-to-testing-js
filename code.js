@@ -24,14 +24,15 @@ function isFive(input) {
     }
 }
 function isVowel(inp){
-    let input= inp.toLowerCase()
-
-    if (isNaN(input)===false){
+    if(inp===undefined||isNaN(inp)===false){
         return false
-    }else if(input==='a'||input==='e'||input==='i'||input==='o'||input==='u'){
+    }
+    else{
+        let input= inp.toLowerCase()
+        if(input==='a'||input==='e'||input==='i'||input==='o'||input==='u'){
         return true
     }
     else {
         return false
     }
-}
+}}
