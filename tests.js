@@ -57,4 +57,7 @@ describe( 'isVowel',function(){
     it('should return true if "a"', function (){
         expect(typeof isVowel('a')).toBe('boolean');
     });
+    it('should return true if "A"', function (){
+        expect(typeof isVowel('A')).toBe('boolean');
+    });
 });
