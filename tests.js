@@ -66,4 +66,10 @@ describe( 'isVowel',function(){
     it('should return false if "4"', function (){
         expect(isVowel('4')).toBe(false);
     });
+    it('should return false if "true"', function (){
+        expect(isVowel('true')).toBe(false);
+    });
+    it('should return false if "false"', function (){
+        expect(isVowel('false')).toBe(false);
+    });
 });
